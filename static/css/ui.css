@@ -1,0 +1,89 @@
+html {
+    background-color:#f2f2f2;
+    color:#666;
+    overflow: hidden;
+}
+html,body {
+    min-height:initial;
+}
+body {
+    position:static;
+}
+
+.ui-layout-body {
+    overflow: hidden;
+}
+
+.ui-header {
+    z-index:1000;
+    position:relative;
+    height:50px;
+    background-color:#fff;
+    border-bottom:1px solid #f6f6f6;
+}
+
+.ui-slide {
+    z-index:1001;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1001;
+    width: 220px;
+    overflow-x: hidden;
+    background-color:#202235;
+}
+
+.ui-pagetabs {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left:220px;
+    z-index:999;
+
+    height: 40px;
+    line-height: 40px;
+    padding: 0 80px 0 40px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1)
+}
+
+
+.ui-body {
+    position: absolute;
+    left: 220px;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+    z-index: 998;
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.ui-body-shade {
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    z-index: 1000
+}
+
+.ui-slide,.ui-body,.ui-pagetabs {
+    transition:all .3s;
+
+}
+
+@media screen and (max-width: 992px) {
+    .ui-slide {
+        transform:translate3d(-100%,0,0);
+    }
+    .ui-body,.ui-pagetabs{
+        left:0;
+    }
+}
