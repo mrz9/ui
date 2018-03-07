@@ -1,3 +1,4 @@
+*{margin:0;padding:0;}
 html {
     background-color:#f2f2f2;
     color:#666;
@@ -79,11 +80,164 @@ body {
 
 }
 
+
+.ui-badge-dot {
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    position: absolute;
+    top:30%;
+    left:50%;
+    background-color: #FF5722;
+
+}
+
+
+/** header **/
+.ui-header .ui-layout-left {
+    left:220px;
+}
+
+.ui-header .ui-layout-right {
+    right:0;
+}
+
+.ui-header .ui-nav-item {
+    position:relative;
+    height:50px;
+    line-height: 50px;
+    list-style: none;
+    float:left;
+    padding:0 10px;
+}
+
+.ui-header .ui-nav {
+    position: absolute;
+    top:0;
+    padding:0 10px;
+    margin:0;
+    color:#333;
+    
+}
+
+.ui-header .ui-nav a {
+    color:inherit;
+}
+
+/** slide **/
+.ui-slide .ui-logo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1002;
+    width: 220px;
+    height: 49px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: 300;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color:rgba(255,255,255,.8);
+    line-height:50px;
+    font-size:16px;
+    text-align:center;
+
+    background-color: #20222A;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15)
+}
+.ui-slide .ui-slide-scroll {
+    height:100%;
+    box-sizing: border-box;
+    padding-top:50px;
+}
+
+.ui-slide ul {
+    margin:0;
+    padding:0;
+}
+
+/** pagetabs **/
+.ui-pagetabs {
+    padding-left:40px;
+    padding-right:80px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.ui-pagetabs .ui-icon {
+    position:absolute;
+    top:0;
+    width:40px;
+    height:100%;
+    text-align: center;
+    cursor: pointer;
+}
+.ui-pagetabs .ui-icon:hover {
+    background-color:#f5f5f5;
+}
+.ui-pagetabs .ui-tabs-control {
+    border-left:1px solid #f6f6f6;
+}
+.ui-pagetabs .ui-page-prev {
+    left:0;
+    border-left:none;
+    border-right:1px solid #f6f6f6;
+}
+.ui-pagetabs .ui-page-next {
+    right:40px;
+}
+.ui-pagetabs .ui-page-more {
+    right:0;
+}
+.ui-pagetabs .ui-tabs {
+    overflow: hidden;
+}
+.ui-pagetabs .ui-tabs ul {
+    font-size:0;
+    margin:0;
+    padding:0;
+    white-space: nowrap;
+}
+.ui-pagetabs .ui-tabs li:first-child {
+    padding-right:15px;
+}
+.ui-pagetabs .ui-tabs li {
+    position: relative;
+    display: inline-block;
+    list-style:none;
+    min-width:0;
+    max-width: 160px;
+    font-size:14px;
+    vertical-align: top;
+    padding-left:15px;
+    padding-right:40px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right:1px solid #f6f6f6;
+}
+.ui-pagetabs .ui-tabs .close {
+    position: absolute;
+    font-size:12px;
+    width:24px;
+    height: 24px;
+    right:8px;
+    top:8px;
+}
+.ui-pagetabs .ui-tabs li.on, .ui-pagetabs .ui-tabs li:hover {
+    background-color:#f6f6f6;
+    color:#000;
+}
+
 @media screen and (max-width: 992px) {
     .ui-slide {
         transform:translate3d(-100%,0,0);
     }
     .ui-body,.ui-pagetabs{
+        left:0;
+    }
+    .ui-header .ui-layout-left {
         left:0;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -8,23 +9,174 @@
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
     <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="stylesheet" href="/static/css/amazeui.min.css">
     <link rel="stylesheet" href="/static/css/ui.css">
 
 </head>
+
 <body>
-   <div class="am-g ui-app">
-       <div class="ui-header"></div><!-- end ui-header -->
+    <div class="am-g ui-app">
+        <div class="ui-header">
+            <ul class="ui-nav ui-layout-left am-cf">
+                <li class="ui-nav-item">
+                    <a href="javascript:void(0);">
+                        <i class="am-icon-bars am-icon-fw"></i>
+                    </a>
+                </li>
+                <li class="ui-nav-item am-hide-sm">
+                    <a href="javascript:void(0);">
+                        <i class="am-icon-bullseye am-icon-fw"></i>
+                    </a>
+                </li>
+                <li class="ui-nav-item">
+                    <a href="javascript:void(0);">
+                        <i class="am-icon-refresh am-icon-fw"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="ui-nav ui-layout-right am-cf">
+                <li class="ui-nav-item">
+                    <a href="javscript:void(0);">
+                        <i class="am-icon-bell-o am-icon-fw"></i>
+                        <span class="ui-badge-dot"></span>
+                    </a>
+                </li>
+                <li class="ui-nav-item">
+                    <div class="am-dropdown" data-am-dropdown>
+                        <a href="javascript:void(0);" class="am-dropdown-toggle" data-am-dropdown-toggle>MRZ
+                            <span class="am-icon-caret-down"></span>
+                        </a>
+                        <ul class="am-dropdown-content">
+                            <li>
+                                <a href="#">基本资料</a>
+                            </li>
+                            <li>
+                                <a href="#">安全设置</a>
+                            </li>
+                            <li class="am-divider"></li>
+                            <li>
+                                <a href="#">
+                                    <label class="am-text-danger">退出</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end ui-header -->
 
-       <div class="ui-slide"></div><!-- end ui-slide -->
+        <div class="ui-slide">
+            <div class="ui-slide-scroll">
+                <div class="ui-logo">
+                    <span>PHP
+                        <b>S</b>HOW</span>
+                </div>
+                <div class="ui-nav ui-nav-tree">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <i class="am-icon-ship am-icon-fw"></i>
+                                <cite>组件</cite>
+                                <span class="am-icon- am-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end ui-slide-scroll -->
+        </div>
+        <!-- end ui-slide -->
 
-       <div class="ui-pagetabs"></div><!-- end ui-pagetabs -->
+        <div class="ui-pagetabs">
+            <div class="ui-icon ui-tabs-control ui-page-prev am-icon-angle-double-left"></div>
+            <div class="ui-icon ui-tabs-control ui-page-next am-icon-angle-double-right"></div>
+            <div class="ui-icon ui-tabs-control ui-page-more ">
+                <div class="am-dropdown" data-am-dropdown>
+                    <span  class="am-dropdown-toggle am-icon-angle-down"></span>
+                    <ul class="am-dropdown-content">
+                        <li>
+                            <a href="#">关闭当前标签</a>
+                        </li>
+                        <li>
+                            <a href="#">关闭其它标签</a>
+                        </li>
+                        <li>
+                            <a href="#">关闭所有标签</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui-tabs">
+                <ul class="ui-tab-title am-cf">
+                    <li lay-id="/">
+                        <i class="am-icon-home am-icon-fw"></i>
+                    </li>
+                    <li class="on">
+                        <span>消息中心</span>
+                        <a href="#" class="am-close close">&times;</a>
+                    </li>
+                    <li  class="">
+                        <span>添加资料</span>
+                        <a href="#" class="am-close close">&times;</a>
+                    </li>
+                    <li  class="">
+                        <span>通讯录</span>
+                        <a href="#" class="am-close close">&times;</a>
+                    </li>
+                    <li  class="">
+                        <span>项目列表</span>
+                        <a href="#" class="am-close close">&times;</a>
+                    </li>
+                    <li  class="">
+                        <span>工作计划</span>
+                        <a href="#" class="am-close close">&times;</a>
+                    </li>
+                    <li  class="">
+                            <span>添加资料</span>
+                            <a href="#" class="am-close close">&times;</a>
+                        </li>
+                        <li  class="">
+                            <span>通讯录</span>
+                            <a href="#" class="am-close close">&times;</a>
+                        </li>
+                        <li  class="">
+                            <span>项目列表</span>
+                            <a href="#" class="am-close close">&times;</a>
+                        </li>
+                        <li  class="">
+                            <span>工作计划</span>
+                            <a href="#" class="am-close close">&times;</a>
+                        </li>
+                        <li  class="">
+                                <span>添加资料</span>
+                                <a href="#" class="am-close close">&times;</a>
+                            </li>
+                            <li  class="">
+                                <span>通讯录</span>
+                                <a href="#" class="am-close close">&times;</a>
+                            </li>
+                            <li  class="">
+                                <span>项目列表</span>
+                                <a href="#" class="am-close close">&times;</a>
+                            </li>
+                            <li  class="">
+                                <span>工作计划</span>
+                                <a href="#" class="am-close close">&times;</a>
+                            </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end ui-pagetabs -->
 
-       <div class="ui-body"></div><!-- end ui-body -->
+        <div class="ui-body"></div>
+        <!-- end ui-body -->
 
-       <div class="ui-body-shade"></div><!-- end ui-shade -->
-   </div><!--end  ui-app-->
+        <div class="ui-body-shade"></div>
+        <!-- end ui-shade -->
+    </div>
+    <!--end  ui-app-->
 
 
     <!--[if (gte IE 9)|!(IE)]><!-->
@@ -37,4 +189,5 @@
     <![endif]-->
     <script src="/static/js/amazeui.js"></script>
 </body>
+
 </html>
